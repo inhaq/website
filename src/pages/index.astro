@@ -1,14 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Nav from "../components/Nav.astro";
+import Stack from "../components/Stack.astro";
+import Work from "../components/Work.astro";
+import Education from "../components/Education.astro";
+import Projects from "../components/Projects.astro";
+import Contact from "../components/Contact.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Inzimam Ul Haq — Full Stack Engineer">
   <main class="">
-    <h1 class="text-3xl font-bold underline text-arctic">Hello world!</h1>
-    <div class="p-4 bg-mint"></div>
-    <div class="p-4 bg-forsythia"></div>
-    <div class="p-4 bg-saffron"></div>
-    <div class="p-4 bg-nocturnal"></div>
-    <div class="p-4 bg-noir"></div>
+    <Nav />
+    <Hero />
+    <Stack />
+    <Work />
+    <Education />
+    <Projects />
+    <Contact />
   </main>
 </Layout>
