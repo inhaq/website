@@ -14,5 +14,5 @@ export default {
       },
     },
   },
-  plugins: ["tailwind-plugin-prettier"],
+  plugins: ["prettier-plugin-tailwindcss"],
 };
