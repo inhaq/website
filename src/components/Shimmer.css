@@ -1,0 +1,15 @@
+.shimmer-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: inherit;
+  z-index: 1;
+}
+
+.shimmer-effect {
+  z-index: 2;
+}

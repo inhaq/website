@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import "./Shimmer.css";
 
 export default function Shimmer() {
   return (
@@ -9,7 +10,7 @@ export default function Shimmer() {
         "--bg-color":
           "linear-gradient(rgb(var(--background)), rgb(var(--background)))",
       }}
-      className="relative flex aspect-[2/1] w-full max-w-lg flex-col items-center justify-center rounded-xl border border-transparent p-8 text-center
+      className="shimmer-container relative flex aspect-[2/1] w-full max-w-lg flex-col items-center justify-center rounded-xl border border-transparent p-8 text-center
       [background:padding-box_var(--bg-color),border-box_var(--border-color)] overflow-hidden"
     >
       <motion.div
@@ -22,7 +23,7 @@ export default function Shimmer() {
           repeat: Infinity,
           ease: "easeOut",
         }}
-        className="absolute inset-y-0 w-10 h-[3px]"
+        className="shimmer-effect absolute inset-y-0 w-10 h-[3px]"
         style={{
           background: `linear-gradient(270deg,rgba(255,255,255,.6) 0%,hsla(0,0%,100%,0) 100%)`,
         }}
