@@ -1,0 +1,35 @@
+.ellipsis-1 {
+  -webkit-filter: blur(100px);
+  background-color: #ff9932;
+  aspect-ratio: 3/1;
+  opacity: 0.6;
+  border-radius: 100%;
+  filter: blur(100px);
+  flex: none;
+  height: var(--framer-aspect-ratio-supported, 506px);
+  mix-blend-mode: saturation;
+  left: -50px;
+  position: absolute;
+  top: -28px;
+  transform: perspective(1200px);
+  /* width: 641px; */
+  z-index: 0;
+}
+
+.ellipsis-2 {
+  -webkit-filter: blur(100px);
+  aspect-ratio: 1.266798418972332 / 1;
+  background-color: #ff9932;
+  opacity: 0.2;
+  border-radius: 50%;
+  filter: blur(100px);
+  flex: none;
+  height: var(--framer-aspect-ratio-supported, 388px);
+  mix-blend-mode: darken;
+  position: absolute;
+  right: 0;
+  top: 621px;
+  transform: perspective(1200px);
+  width: 491px;
+  z-index: 0;
+}
