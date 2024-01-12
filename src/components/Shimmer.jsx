@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import "./Shimmer.css";
 
 export default function Shimmer() {
   const text =
     "Crafting digital experiences so smooth, they should come with a jazz soundtrack.";
+  const [hoverIndex, setHoverIndex] = useState(null);
   return (
     <div
       style={{
@@ -35,11 +37,15 @@ export default function Shimmer() {
           {text.split("").map((char, index) => (
             <motion.span
               key={index}
-              whileHover={{
-                fontSize: 12,
-                transition: { duration: 0.1 },
-                color: "red",
+              onHoverStart={() => setHoverIndex(index)}
+              onHoverEnd={() => setHoverIndex(null)}
+              style={{
+                WebkitTextStroke:
+                  hoverIndex === index ? "3px currentColor" : "0px",
               }}
+              whileHover={{ scaleX: 1.2, paddingInline: 0.8 }}
+              transition={{ duration: 1 }}
+              className="inline-block cursor-pointer whitespace-pre-wrap"
             >
               {char}
             </motion.span>

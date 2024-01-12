@@ -49,26 +49,27 @@
   z-index: 3;
 }
 
-.main-hero {
-  -webkit-backdrop-filter: blur(10px);
-  align-content: flex-start;
-  align-items: flex-start;
-  backdrop-filter: blur(10px);
-  background: linear-gradient(
-    180deg,
-    rgba(14, 14, 15, 0.34) 0%,
-    rgba(14, 14, 15, 0) 84.59309900069182%
-  );
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  display: flex;
-  flex: none;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  /* height: 620px; */
-  justify-content: space-between;
-  overflow: visible;
-  /* padding: 64px 40px 120px 64px; */
+.char {
   position: relative;
-  width: 100%;
+  transition: all 0.3s ease;
+  white-space: pre-wrap;
+}
+.char::after {
+  content: attr(data-char);
+  top: 0;
+  left: 0;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  opacity: 0;
+}
+.char:hover {
+  transform: scale(1.2);
+  color: #ff0000; /* Added color change on hover */
+}
+
+.char:hover::after {
+  transform: scale(1.2);
+  opacity: 1;
 }
