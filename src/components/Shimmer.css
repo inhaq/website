@@ -8,6 +8,11 @@
   border-top: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: inherit;
   z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 14, 15, 0.34) 0%,
+    rgba(14, 14, 15, 0) 84.59309900069182%
+  );
 }
 
 .shimmer-effect {
@@ -36,40 +41,10 @@
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 0px;
-  height: min-content;
+  height: 600px;
   justify-content: center;
-  left: 80px;
-  max-width: 1320px;
   overflow: hidden;
-  padding: 2px;
-  position: absolute;
-  right: 80px;
-  /* top: 55%; */
   will-change: var(--framer-will-change-override, transform);
   z-index: 3;
-}
-
-.char {
-  position: relative;
-  transition: all 0.3s ease;
-  white-space: pre-wrap;
-}
-.char::after {
-  content: attr(data-char);
-  top: 0;
-  left: 0;
-  color: transparent;
-  -webkit-text-stroke: 1px black;
-  transition: all 0.3s ease;
-  transform: scale(1);
-  opacity: 0;
-}
-.char:hover {
-  transform: scale(1.2);
-  color: #ff0000; /* Added color change on hover */
-}
-
-.char:hover::after {
-  transform: scale(1.2);
-  opacity: 1;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
 }
