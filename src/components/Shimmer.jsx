@@ -54,7 +54,7 @@ export default function Shimmer() {
         <div className="max-w-xs px-2.5 lg:max-w-none">
           <img
             className=" aspect-auto max-w-80 rounded-3xl bg-zinc-100 object-cover dark:bg-zinc-800"
-            src="./../../public/profile1.jpeg"
+            src="/profile1.jpeg"
             alt=""
           />
         </div>
