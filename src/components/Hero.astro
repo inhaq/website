@@ -1,7 +1,18 @@
 ---
 import Shimmer from "./Shimmer";
+import { Image } from "astro:assets";
+import profilePic from "../img/profile1.jpeg";
 ---
 
 <section class="text-white py-20 max-w-screen-3xl">
-  <Shimmer client:visible />
+  <Shimmer
+    client:visible
+    text="Crafting digital experiences so smooth, they should come with a jazz soundtrack."
+  >
+    <Image
+      src={profilePic}
+      alt="Profile picture"
+      class="rounded-3xl mx-auto max-w-80 max-h-80"
+    />
+  </Shimmer>
 </section>

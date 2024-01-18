@@ -2,9 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import "./Shimmer.css";
 
-export default function Shimmer() {
-  const text =
-    "Crafting digital experiences so smooth, they should come with a jazz soundtrack.";
+export default function Shimmer({ text, children }) {
   const [hoverIndex, setHoverIndex] = useState(null);
   return (
     <div
@@ -51,12 +49,8 @@ export default function Shimmer() {
             </motion.span>
           ))}
         </motion.p>
-        <div className="max-w-xs px-2.5 lg:max-w-none">
-          <img
-            className=" aspect-auto max-w-80 rounded-3xl bg-zinc-100 object-cover dark:bg-zinc-800"
-            src="/profile1.jpeg"
-            alt=""
-          />
+        <div className="aspect-auto max-h-80 rounded-3xl object-cover px-2.5 lg:max-w-none">
+          {children}
         </div>
       </div>
     </div>
