@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 import "./Shimmer.css";
 
 export default function Shimmer({ text, children }) {
-  const [hoverIndex, setHoverIndex] = useState(null);
   return (
     <div
       style={{
@@ -31,24 +29,9 @@ export default function Shimmer({ text, children }) {
         }}
       />
       <div className="w-[100%] h-[100%] flex z-10">
-        <motion.p className="z-10 relative font-title text-5xl text-mint text-left max-w-screen-lg mr-10">
-          {text.split("").map((char, index) => (
-            <motion.span
-              key={index}
-              onHoverStart={() => setHoverIndex(index)}
-              onHoverEnd={() => setHoverIndex(null)}
-              style={{
-                WebkitTextStroke:
-                  hoverIndex === index ? "3px currentColor" : "0px",
-              }}
-              whileHover={{ scaleX: 1.2, paddingInline: 0.8 }}
-              transition={{ duration: 1 }}
-              className="inline-block cursor-pointer whitespace-pre-wrap"
-            >
-              {char}
-            </motion.span>
-          ))}
-        </motion.p>
+        <p className="z-10 relative font-title text-5xl text-mint text-left max-w-screen-lg mr-10">
+          {text}
+        </p>
         <div className="aspect-auto max-h-80 rounded-3xl object-cover px-2.5 lg:max-w-none">
           {children}
         </div>
