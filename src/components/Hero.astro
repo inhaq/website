@@ -4,10 +4,15 @@ import { Image } from "astro:assets";
 import profilePic from "../img/profile1.jpeg";
 ---
 
-<section class="text-white py-20 max-w-screen-3xl">
+<section id="about" class="text-white pb-20 -mt-10 max-w-screen-3xl">
+  <h1
+    class="uppercase relative top-44 left-20 -ml-2 text-8xl opacity-100 z-20 font-normal text-forsythia font-title"
+  >
+    Inzimam ul haq
+  </h1>
   <Shimmer
     client:visible
-    text="Crafting digital experiences so smooth, they should come with a jazz soundtrack."
+    text="Full Stack Engineer dedicated to crafting exceptionally smooth digital experiences through meticulous design and functionality. Proficient in both frontend and backend technologies, I collaborate seamlessly across teams, ensuring the delivery of user-centric solutions. Led teams effectively, fostering an environment where individuals thrive and deliver their best work. "
   >
     <Image
       src={profilePic}

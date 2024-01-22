@@ -29,7 +29,7 @@ export default function Shimmer({ text, children }) {
         }}
       />
       <div className="w-[100%] h-[100%] flex z-10">
-        <p className="z-10 relative font-title text-5xl text-mint text-left max-w-screen-lg mr-10">
+        <p className="z-10 relative text-2xl mt-28 text-mint opacity-80 text-left max-w-screen-lg mr-10 font-thin">
           {text}
         </p>
         <div className="aspect-auto max-h-80 rounded-3xl object-cover px-2.5 lg:max-w-none">
