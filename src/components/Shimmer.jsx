@@ -30,16 +30,16 @@ export default function Shimmer({ children }) {
       />
       <div className="w-[100%] h-[100%] flex z-10">
         <div>
-          <h1 className="flex uppercase text-7xl opacity-100 z-20 font-normal text-forsythia font-title">
+          <h1 className="flex text-7xl opacity-100 z-20 font-normal text-forsythia font-title">
             Inzimam ul haq
           </h1>
           <br />
           <p className="z-10 font-sg text-xl text-mint text-left max-w-screen-lg mr-20 font-light">
             Hi 👋, I am{" "}
             <span className="text-forsythia hover:text-saffron">
-              Full-Stack Engineer
-            </span>{" "}
-            , dedicated to crafting exceptionally smooth digital experiences
+              Full-Stack Engineer{" "}
+            </span>
+            - dedicated to crafting exceptionally smooth digital experiences
             through meticulous design and functionality.
           </p>
           <br />
