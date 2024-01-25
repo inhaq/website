@@ -3,9 +3,6 @@ import { useState } from "react";
 
 let tabs = [
   { id: "#about", label: "About" },
-  { id: "#stack", label: "Stack" },
-  { id: "#work", label: "Work" },
-  { id: "#education", label: "Education" },
   { id: "#projects", label: "Projects" },
   { id: "#contact", label: "Contact" },
 ];
