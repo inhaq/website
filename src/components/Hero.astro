@@ -4,12 +4,12 @@ import { Image } from "astro:assets";
 import profilePic from "../img/profile1.jpeg";
 ---
 
-<section id="about" class="text-white pb-20 max-w-screen-3xl scroll-mt-[120px]">
+<section id="about" class="max-w-screen-3xl scroll-mt-[120px] pb-20 text-white">
   <Shimmer client:visible>
     <Image
       src={profilePic}
       alt="Profile picture"
-      class="rounded-3xl mx-auto max-w-80 max-h-80"
+      class="mx-auto max-h-80 max-w-80 rounded-3xl"
     />
   </Shimmer>
 </section>
