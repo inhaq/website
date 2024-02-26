@@ -11,8 +11,8 @@ export default {
       colors: {
         arctic: "#F1F6F4",
         mint: "#D9E8E3",
-        forsythia: "#FFC801",
-        saffron: "#FF9932",
+        forsythia: "#AED4D2",
+        saffron: "#FCA07F",
         nocturnal: "#114C5A",
         noir: "#172B36",
         dead: "#191f28",
